@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Aquamarine">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/sheculde"
+        android:textSize="24sp"
+        android:textColor="@color/BlueViolet"/>
+
+    <Spinner
+        android:id="@+id/spinnerClass"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="147dp"
+        android:layout_toStartOf="@+id/spinnerDay"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerDay"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="72dp" />
+
+    <ListView
+        android:id="@+id/lvSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerClass"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
